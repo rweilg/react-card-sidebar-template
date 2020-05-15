@@ -1,11 +1,21 @@
 import React from "react";
 import "./canvas.css";
+import BellIcon from "./icons/bell";
+import PhoneIcon from "./icons/phone";
+import MoreIcon from "./icons/more";
 
 function Window3() {
   return (
     <div className="canvas-container">
-      <div className="title-bar">
-        <h1 className="bigtitle">Messages</h1>
+      <div className="title-bar-container">
+        <div className="title-bar-area">
+          <h1 className="bigtitle">Messages</h1>
+          <div className="icons">
+            <BellIcon />
+            <PhoneIcon />
+            <MoreIcon />
+          </div>
+        </div>
         <div className="separator"></div>
       </div>
       <div className="content-area">
