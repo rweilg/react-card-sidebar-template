@@ -6,8 +6,16 @@
 }
 
 h1.bigtitle {
-  font-size: 42px;
+  font-size: 38px;
   align-self: end;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: #d7d7db;
 }
 
 .title-bar {
@@ -20,4 +28,36 @@ h1.bigtitle {
   grid-row: 4;
   grid-column: 2;
   background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-rows: 87% 13%;
+}
+
+.text-field-container {
+  height: 70px;
+  width: 100%;
+  border: 2px solid #d7d7db;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: 2% 96% 2%;
+  align-items: center;
+}
+
+.text-field {
+  grid-column: 2;
+  height: 60px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+}
+
+.text-field:focus {
+  outline-width: 0;
+}
+
+.send-btn {
+  background: #ff8282;
+  border: none;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px;
 }
